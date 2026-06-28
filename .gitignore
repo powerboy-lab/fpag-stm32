@@ -1,0 +1,68 @@
+# Local IDE state
+.vscode/
+.agents/
+.codex/
+*.user
+*.uvguix.*
+
+# Logs and temporary captures
+debug_logs/
+*.log
+*.tmp
+*.bak
+*_bak_*
+
+# Keil / MDK build outputs
+**/MDK-ARM/**/Listings/
+**/MDK-ARM/**/Objects/
+**/MDK-ARM/**/RTE/
+**/MDK-ARM/**/*.o
+**/MDK-ARM/**/*.d
+**/MDK-ARM/**/*.crf
+**/MDK-ARM/**/*.lst
+**/MDK-ARM/**/*.lnp
+**/MDK-ARM/**/*.map
+**/MDK-ARM/**/*.htm
+**/MDK-ARM/**/*.axf
+**/MDK-ARM/**/*.elf
+**/MDK-ARM/**/*.hex
+**/MDK-ARM/**/*.bin
+**/MDK-ARM/**/*.iex
+
+# Generic embedded build folders
+build/
+bin/
+obj/
+out/
+
+# EIDE generated state
+**/.eide/log/
+**/.eide.usr.ctx.json
+*.ept
+*.eide-template
+
+# Quartus generated outputs
+**/db/
+**/incremental_db/
+**/output_files/
+**/.qsys_edit/
+**/greybox_tmp/
+**/simulation/modelsim/
+**/*.rpt
+**/*.summary
+**/*.smsg
+**/*.sof
+**/*.pof
+**/*.jic
+**/*.jdi
+**/*.sld
+**/*.cdf
+**/*.done
+**/*.qws
+**/*.pin
+**/*.sta.rpt
+**/*.map
+
+# OS files
+Thumbs.db
+Desktop.ini

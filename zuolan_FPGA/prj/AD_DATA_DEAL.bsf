@@ -1,0 +1,127 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 368 192)
+	(text "AD_DATA_DEAL" (rect 5 0 89 12)(font "Arial" ))
+	(text "inst" (rect 8 160 20 172)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CS" (rect 0 0 12 12)(font "Arial" ))
+		(text "CS" (rect 21 27 33 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "RD_EN" (rect 0 0 35 12)(font "Arial" ))
+		(text "RD_EN" (rect 21 43 56 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "AD1_FLAG" (rect 0 0 51 12)(font "Arial" ))
+		(text "AD1_FLAG" (rect 21 59 72 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "AD2_FLAG" (rect 0 0 53 12)(font "Arial" ))
+		(text "AD2_FLAG" (rect 21 75 74 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "AD1_FIFO_DATA_IN[11..0]" (rect 0 0 119 12)(font "Arial" ))
+		(text "AD1_FIFO_DATA_IN[11..0]" (rect 21 91 140 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "AD2_FIFO_DATA_IN[11..0]" (rect 0 0 120 12)(font "Arial" ))
+		(text "AD2_FIFO_DATA_IN[11..0]" (rect 21 107 141 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "ADDR[15..0]" (rect 0 0 54 12)(font "Arial" ))
+		(text "ADDR[15..0]" (rect 21 123 75 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 352 32)
+		(output)
+		(text "AD1_FLAG_SHOW[15..0]" (rect 0 0 112 12)(font "Arial" ))
+		(text "AD1_FLAG_SHOW[15..0]" (rect 219 27 331 39)(font "Arial" ))
+		(line (pt 352 32)(pt 336 32)(line_width 3))
+	)
+	(port
+		(pt 352 48)
+		(output)
+		(text "AD2_FLAG_SHOW[15..0]" (rect 0 0 113 12)(font "Arial" ))
+		(text "AD2_FLAG_SHOW[15..0]" (rect 218 43 331 55)(font "Arial" ))
+		(line (pt 352 48)(pt 336 48)(line_width 3))
+	)
+	(port
+		(pt 352 64)
+		(output)
+		(text "AD1_FIFO_DATA_OUT[15..0]" (rect 0 0 130 12)(font "Arial" ))
+		(text "AD1_FIFO_DATA_OUT[15..0]" (rect 201 59 331 71)(font "Arial" ))
+		(line (pt 352 64)(pt 336 64)(line_width 3))
+	)
+	(port
+		(pt 352 80)
+		(output)
+		(text "AD2_FIFO_DATA_OUT[15..0]" (rect 0 0 132 12)(font "Arial" ))
+		(text "AD2_FIFO_DATA_OUT[15..0]" (rect 199 75 331 87)(font "Arial" ))
+		(line (pt 352 80)(pt 336 80)(line_width 3))
+	)
+	(parameter
+		"ADDR6"
+		"0000000000000110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"ADDR7"
+		"0000000000000111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"ADDR8"
+		"0000000000001000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"ADDR9"
+		"0000000000001001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 336 160)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 368 -64 468 16))
+)
