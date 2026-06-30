@@ -12,7 +12,7 @@
  */
 #include "key_app.h"
 #include "ad_measure.h"
-#include "my_fft.h"
+#include "spectrum_analyzer.h"
 #include "da_output.h"
 #include "AD9959.h"
 
@@ -168,6 +168,9 @@ static void key3_action_cycle_phase(void)
 static void key4_action_perform_fft(void)
 {
     my_printf(&huart1, "正在计算FFT频谱...\r\n");
-    calculate_fft_spectrum(fifo_data1_f, AD_FIFO_SIZE);
-    output_fft_spectrum();
+    spectrum_analyzer_set_sampling_freq(get_current_ad_frequency());
+    spectrum_result_t result;
+    spectrum_analyzer_analyze(fifo_data1_f, AD_FIFO_SIZE, &result);
+    spectrum_analyzer_print_uart(&huart1, &result);
+    spectrum_analyzer_send_firewater(&huart1, &result);
 }

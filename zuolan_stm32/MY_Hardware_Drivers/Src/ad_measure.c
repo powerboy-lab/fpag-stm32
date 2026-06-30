@@ -10,6 +10,7 @@
  *******************************************************************************/
 
 #include "ad_measure.h"
+#include "key_app.h"
 #include "stm32f4xx_hal.h"
 
 // --- 宏定??---
@@ -210,6 +211,8 @@ void setSamplingFrequency(float freq, int channel, AdcFrequencyMode mode)
         HAL_Delay(1);
         AD2_FS_L = M & 0xFFFF; // 写入频率控制字的??6??
     }
+
+    set_current_ad_frequency((float)fs);
 }
 
 /**
@@ -391,9 +394,7 @@ void ad_proc(void)
     // 调用并行采集函数，完成一次双通道测量任务??
     // - 通道1: 采集一个频率为 1MHz 的信号，使用 FREQ_MODE_SIGNAL 模式，让函数自动计算合适的采样率??
     // - 通道2: 直接40MHz 的固定频率进行采样，使用 FREQ_MODE_SAMPLING 模式??
-    vpp_adc_parallel(freq1, FREQ_MODE_SIGNAL, 
-										 40000000, FREQ_MODE_SAMPLING);
-		my_printf(&huart1, "AD1 Vpp=%f, AD2 Vpp=%f\r\n", vol_amp1, vol_amp2);
-\
-	
+    vpp_adc_parallel(freq1, FREQ_MODE_SIGNAL,
+                     40000000, FREQ_MODE_SAMPLING);
+    my_printf(&huart1, "AD1 Vpp=%f, AD2 Vpp=%f\r\n", vol_amp1, vol_amp2);
 }

@@ -625,6 +625,11 @@
               <FilePath>..\MY_Algorithms\Src\my_fft.c</FilePath>
             </File>
             <File>
+              <FileName>spectrum_analyzer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MY_Algorithms\Src\spectrum_analyzer.c</FilePath>
+            </File>
+            <File>
               <FileName>my_filter.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\MY_Algorithms\Src\my_filter.c</FilePath>
