@@ -1,0 +1,4 @@
+interface:
+  display_name: "Embedded Autodebug"
+  short_description: "自动调试 MCU/FPGA 工程、Keil 中文编码和 Git 提交。"
+  default_prompt: "Use $embedded-autodebug to inspect my MCU/FPGA project, fix Keil5 Chinese encoding issues when needed, build or instrument it, capture logs, and commit each completed file change into Git."
